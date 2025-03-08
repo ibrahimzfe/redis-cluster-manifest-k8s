@@ -21,4 +21,9 @@ Step 1:
   redis-cluster-8.redis-cluster.redis-cluster.svc.cluster.local:6380 \
   --cluster-replicas 2
 
+Jika ingin buat custom certificate sendiri jalankan perintah ini:
+
+openssl req -x509 -nodes -newkey rsa:4096 -keyout redis.key -out redis.crt -days 3650 -subj "/CN=redis"
+openssl req -x509 -nodes -newkey rsa:4096 -keyout ca.key -out ca.crt -days 3650 -subj "/CN=redis-ca"
+atau CN dapat disesuaikan sesuai nama domain atau IP yang kamu ingin allow. Atau gunakan SAN !
 
