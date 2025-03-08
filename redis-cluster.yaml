@@ -25,8 +25,8 @@ data:
     cluster-replica-validity-factor 2
     appendonly yes
     protected-mode yes
-    requirepass Ad1R2ToP
-    masterauth Ad1R2ToP
+    requirepass ADDPASSWORD
+    masterauth ADDPASSWORD
     tls-port 6380
     port 0
     tls-cert-file /tls/redis.crt
