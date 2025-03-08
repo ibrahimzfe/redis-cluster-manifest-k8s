@@ -1,5 +1,6 @@
 # redis-cluster-manifest-k8s
 Kubernetes/Openshift manifest YAML build by my OWN
+TLS ENABLE WITH PORT 6380
 
 Step 1:
 
